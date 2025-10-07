@@ -83,7 +83,6 @@ with DAG(
     default_args={"retries": 1, "retry_delay": timedelta(minutes=5)},
 ) as dag:
 
-    # Hardcoded to PLATYPUS per your requirement
     train_input_table      = "USER_DB_PLATYPUS.RAW.TWO_STOCK_V2"
     train_view             = "USER_DB_PLATYPUS.ADHOC.TWO_STOCK_VIEW"
     forecast_table         = "USER_DB_PLATYPUS.ADHOC.TWO_STOCK_FORECAST"
